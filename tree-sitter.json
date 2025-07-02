@@ -1,0 +1,42 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "qmake",
+      "camelcase": "Qmake",
+      "title": "Qmake",
+      "scope": "source.qmake",
+      "file-types": [
+        "prf",
+        "pri",
+        "prl",
+        "pro"
+      ],
+      "injection-regex": "^[Qq]make$",
+      "class-name": "TreeSitterQmake"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT OR Apache-2.0",
+    "description": "A tree sitter grammar for the Qmake build system",
+    "authors": [
+      {
+        "name": "tinger",
+        "email": "tinger@tinger.dev"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/tingerrr/tree-sitter-qmake"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
